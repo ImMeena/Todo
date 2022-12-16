@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgb(240, 73, 73);
+    color: yellow;
+    padding: 1em;
+    text-align: center;
+    font-size: 170%;
+    font-weight: bold;
+    flex: 1 1 0px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+main {
+    background-color: rgb(39, 141, 73);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+
+.todo-list label {
+    user-select: none;
+    display: block;
+    padding: 0.5em 2em;
+}
+
+.todo-list label:hover {
+    cursor: pointer;
+}
+
+.todo-list>li:nth-child(2n) {
+    background-color: rgb(165, 235, 188);
+    ;
+}
+
+.todo-list>li:nth-child(2n+1) {
+    background-color: rgb(117, 175, 136);
+    ;
+}
+
+button {
+    cursor: pointer;
+}
